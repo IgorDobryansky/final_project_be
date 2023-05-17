@@ -82,6 +82,7 @@ exports.deleteConfig = (req, res, next) => {
 };
 
 exports.getConfigs = (req, res, next) => {
+  console.log("getConfigs");
   GlobalConfig.find()
     .then(configs => res.status(200).json(configs))
     .catch(err =>
