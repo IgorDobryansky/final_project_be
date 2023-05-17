@@ -6,7 +6,6 @@ const path = require("path");
 const cors = require('cors')
 require("dotenv").config();
 
-app.use(cors());
 
 const globalConfigs = require("./routes/globalConfigs");
 const customers = require("./routes/customers");
@@ -29,6 +28,7 @@ const partners = require("./routes/partners");
 // const mainRoute = require('./routes/index');
 
 const app = express();
+app.use(cors());
 
 // Body parser middleware
 app.use(bodyParser.urlencoded({ extended: false }));
