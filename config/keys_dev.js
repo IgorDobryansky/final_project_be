@@ -1,5 +1,5 @@
 module.exports = {
   mongoURI:
-    'Сюда копируем URI для доступа в БД, например: mongodb+srv://username:password@..........................',
+  'mongodb+srv://ar4er:cfvlehfr@magazine.opnryzk.mongodb.net/?retryWrites=true&w=majority',
   secretOrKey: 'random very very secret string',
 };
