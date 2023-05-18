@@ -3,9 +3,8 @@ const mongoose = require("mongoose");
 const bodyParser = require("body-parser");
 const passport = require("passport");
 const path = require("path");
-const cors = require('cors')
+const cors = require("cors");
 require("dotenv").config();
-
 
 const globalConfigs = require("./routes/globalConfigs");
 const customers = require("./routes/customers");
@@ -84,7 +83,7 @@ if (process.env.NODE_ENV === "production") {
     res.sendFile(path.resolve(__dirname, "client", "build", "index.html"));
   });
 }
-
+console.log(process.env.NODE_ENV);
 const port = process.env.PORT || 4000;
 
 app.listen(port, () => console.log(`Server running on port ${port}`));
